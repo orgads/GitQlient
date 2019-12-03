@@ -5,4 +5,3 @@ export PATH=$QTDIR/bin:$PATH;
 export QT_PLUGIN_PATH=$PWD/qt5/plugins;
 $QTDIR/bin/qmake CONFIG+=release GitQlient.pro
 make -j 4
-cp GitQlient GitQlient_"${TRAVIS_OS_NAME}"
