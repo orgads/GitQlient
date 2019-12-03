@@ -17,6 +17,8 @@ SOURCES += main.cpp
 include(app/GitQlient.pri)
 include(QLogger/QLogger.pri)
 
+DESTDIR = $$PWD/usr/bin
+
 INCLUDEPATH += QLogger \
     app
 

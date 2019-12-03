@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=GitQlient
+Comment=Full Qt Git client
+Exec=GitQlient
+Icon=GitQlient
+Categories=Office;
