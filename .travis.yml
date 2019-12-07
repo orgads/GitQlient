@@ -21,7 +21,6 @@ before_deploy:
   - cp GitQlient.png usr/share/icons/hicolor/256x256/apps
   - wget -c -nv "https://github.com/probonopd/linuxdeployqt/releases/download/6/linuxdeployqt-6-x86_64.AppImage"
   - chmod a+x linuxdeployqt-6-x86_64.AppImage
-  - export PATH=qt5/bin;
   - export VERSION=1.0.0;
   - ./linuxdeployqt-6-x86_64.AppImage usr/share/applications/*.desktop -appimage -verbose=2 -unsupported-allow-new-glibc
   - git config --local user.name "Francesc M."
