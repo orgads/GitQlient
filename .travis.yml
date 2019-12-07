@@ -2,7 +2,7 @@ language: cpp
 git:
   depth: 1
 sudo: required
-dist: bionic
+dist: trusty
 install:
 - bash ci-scripts/$TRAVIS_OS_NAME/install.sh
 script:
@@ -21,8 +21,8 @@ before_deploy:
   - cp GitQlient.png usr/share/icons/hicolor/256x256/apps
   - wget -c -nv "https://github.com/probonopd/linuxdeployqt/releases/download/6/linuxdeployqt-6-x86_64.AppImage"
   - chmod a+x linuxdeployqt-6-x86_64.AppImage
-  - ./linuxdeployqt-6-x86_64.AppImage usr/share/applications/*.desktop -appimage -unsupported-allow-new-glibc
   - export VERSION=1.0.0
+  - ./linuxdeployqt-6-x86_64.AppImage usr/share/applications/*.desktop -appimage -verbose=2
   - git config --local user.name "Francesc M."
   - git config --local user.email "francescmm@gmail.com"
 deploy:
