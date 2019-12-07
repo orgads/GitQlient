@@ -1,3 +1,4 @@
 sudo apt-add-repository -y ppa:ubuntu-toolchain-r/test
 sudo apt-get -qq install g++-7 libc6-i386 build-essential libgl1-mesa-dev mesa-common-dev libgles2-mesa-dev
-sudo apt-get remove -y qt4
+sudo apt-get remove -y --auto-remove qt4-default
+sudo apt-get purge -y --auto-remove qt4-default
