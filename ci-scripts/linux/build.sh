@@ -6,4 +6,4 @@ export PATH=$QTDIR/bin:LD_LIBRARY_PATH;
 export QT_PLUGIN_PATH=$PWD/qt5/plugins;
 qmake CONFIG+=release GitQlient.pro
 make -j 4
-make install INSTALL_ROOT=AppDir
+make install INSTALL_ROOT=usr
